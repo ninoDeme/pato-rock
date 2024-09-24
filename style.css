@@ -73,9 +73,9 @@ body {
 }
 
 .splash {
-  background-image: url('public/rock-rio.jpg');
+  background-image: url('./public/rock-rio.jpg');
   width: 100vw;
-  height: calc(100vh - 60px);
+  height: calc(100dvh - 60px);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -84,7 +84,6 @@ body {
   gap: 12px;
   position: relative;
   color: white;
-  margin-bottom: 64px;
 }
 
 .gradient {
@@ -101,6 +100,12 @@ body {
   flex-direction: column;
   text-align: center;
   color: white;
+  max-width: 800px;
+  margin: auto;
+}
+
+.wrapper-info-contato {
+  max-width: 100%;
 }
 
 .contato {
@@ -108,6 +113,7 @@ body {
   justify-items: start !important;
   padding: 8px !important;
   padding-left: 30px !important;
+  flex: 1 1 0%;
 }
 
 .form-ins {
@@ -170,6 +176,10 @@ body {
 .contato-wrapper {
   display: flex;
   flex-direction: row;
+}
+
+.contato-wrapper h2 {
+  margin-bottom: 6px;
 }
 
 .mapa {
