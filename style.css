@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rock+Salt&display=swap');
+
+:root {
+  --cor1: #16F070;
+  --cor2: #B0443C;
+  --cor3: #EF2215;
+  --cor4: #419B66;
+  --cor5: #704542;
+  --cor6: #35463C;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.flex-1 {
+  flex: 1 1 0;
+}
+
+.logo-wrapper {
+  padding: 0.5rem
+}
+
+.logo {
+  font-family: "Rock Salt", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.header {
+  width: 100vw;
+  background-color: var(--cor2);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.header a {
+  padding: 0.5rem;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.header a:hover {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.splash {
+  background-image: url('public/rock-rio.jpg');
+  width: 100vw;
+  margin: auto;
+  height: calc(100vh - 60px);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
