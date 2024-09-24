@@ -12,6 +12,7 @@
 body {
   margin: 0;
   font-family: Inter, sans-serif;
+  background: #0e0e0e;
 }
 
 .flex-1 {
@@ -19,7 +20,8 @@ body {
 }
 
 .logo-wrapper {
-  padding: 0.5rem
+  padding: 0.5rem;
+  text-decoration: none;
 }
 
 .logo {
@@ -27,6 +29,19 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 18px;
+}
+
+.logo-splash {
+  font-family: "Rock Salt", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 46px;
+  z-index: 10;
+}
+
+.logo-sub {
+  font-size: 28px;
+  z-index: 10;
 }
 
 .header {
@@ -60,11 +75,106 @@ body {
 .splash {
   background-image: url('public/rock-rio.jpg');
   width: 100vw;
-  margin: auto;
   height: calc(100vh - 60px);
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 12px;
+  position: relative;
+  color: white;
+  margin-bottom: 64px;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #0e0e0e 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.wrapper-info {
+  padding: 72px 72px;
+  background: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.contato {
+  text-align: start !important;
+  justify-items: start !important;
+  padding: 8px !important;
+  padding-left: 30px !important;
+}
+
+.form-ins {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  gap: 2px;
+  font-size: 18px;
+}
+
+.form-ins input {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-ins button {
+  font-size: 18px;
+  padding: 8px;
+  margin-top: 8px;
+}
+
+.wrapper-info p {
+  font-size: 18px;
+}
+
+.wrapper-info h1 {
+  font-size: 38px;
+  color: var(--cor1);
+}
+
+.wrapper-info ul {
+  font-size: 18px;
+  text-align: left;
+  align-self: center;
+}
+
+.wrapper-info table {
+  text-align: left;
+  align-self: center;
+  min-width: 400px;
+  width: max-content;
+}
+
+.wrapper-info td,
+.wrapper-info th {
+  border: var(--cor1) solid 1px;
+  margin: 0;
+  padding: 4px
+}
+
+.wrapper-info label {
+  align-self: start;
+}
+
+.wrapper-info input {
+  align-self: start;
+}
+
+.contato-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.mapa {
+  align-self: flex-start;
+  max-width: 600px;
+  object-fit: cover;
+  height: auto;
 }
